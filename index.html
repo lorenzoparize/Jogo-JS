@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <!-- Link para o arquivo CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Jogo da Memória</a>
+</nav>
+
+<!-- Cabeçalho -->
+<header class="text-center py-4">
+    <h1>Jogo da Memória</h1>
+    <p>Tente combinar os pares de cartas!</p>
+</header>
+
+<!-- Jogo Centralizado -->
+<main class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+    <div class="text-center">
+        <div class="memory-board" id="board"></div>
+        <button class="btn btn-primary btn-lg mt-4" onclick="startGame()">Reiniciar Jogo</button>
+    </div>
+</main>
+
+<!-- Rodapé -->
+<footer class="text-center py-4 mt-5">
+    <p>&copy; 2024 Jogo da Memória | Vitórias: <span id="victoryCount">0</span></p>
+</footer>
+
+<!-- Scripts do Bootstrap e do seu JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
